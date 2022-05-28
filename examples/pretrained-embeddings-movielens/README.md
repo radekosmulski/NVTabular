@@ -9,7 +9,7 @@ We will use the [MovieLens 100K Dataset](https://grouplens.org/datasets/movielen
 
 ## Docker image
 
-The notebooks in this tutorial are guaranteed to work with the `merlin-tensorflow-training:22.04` image. Please find the instructions for running the container below.
+Unless otherwise stated, the notebooks should be executed from within the `merlin-tensorflow-training:22.04` docker container.
 
 ```
 docker pull nvcr.io/nvidia/merlin/merlin-tensorflow-training:22.05
@@ -25,6 +25,8 @@ jupyter notebook --allow-root --no-browser --NotebookApp.token='' --ip='0.0.0.0'
 The notebooks should be executed in the following order.
 
 - [01-Download-Convert.ipynb](01-Download-Convert.ipynb)
+
+Choose whether to create synthetic data or download image data associated with the MovieLens 100k dataset.
 
 - [02-Data-Enrichment.ipynb](02-Data-Enrichment.ipynb)
 
